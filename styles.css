@@ -1,0 +1,148 @@
+html,
+body {
+    font-size: 13px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+/* turning the beautiful square logo into an ugly
+rectangle because it is like this in the exercise */
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* style the sidebar */
+.aside {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* style the entire header */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4%;
+    background-color: #03BAE4;
+    color: white
+}
+
+/* style the text in the header */
+.header_description {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_description h1 {
+    font-size: 25px;
+    font-weight: lighter;
+
+    /* code to counter safari's default feature
+    that puts to much margin on the <h1> element */
+    margin: 0;
+}
+
+.header_description p {
+    margin-bottom: -10px;
+}
+
+/* style the "location" and "email" link in the header */
+.headerLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+/* style the entire list with the course info */
+.courses_list {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+
+/* style the separate list elements <li> */
+.listItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* style the buttons at the back of the list */
+.listItem button {
+    color: white;
+    background-color: #F37786;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+    font-size: 12px;
+    border-width: 0px;
+}
+ 
+/* change button style when hovering over */
+.listItem button:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    background-color: #ee4c5f
+}
+/* acces the <p> elements (text) within the list */
+li > p {
+    width: 200px;
+    color: grey;
+}
+/* apply grey background on every other element of the list */
+.greyBackground{
+    background-color: #f2f2f2;;
+}
+
+/* style the entire footer */
+footer {
+    background-color: #F37786;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 7%;
+    width:100%
+}
+/* style the icons in the right half of the footer */
+.right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 66%;
+}
+
+/* style the copyright inf in the left part of the footer */
+ .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+ }
